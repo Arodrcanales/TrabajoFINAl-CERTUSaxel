@@ -1,0 +1,165 @@
+body{
+    /* color de fonde degradado */
+    background: linear-gradient(70deg, blue, pink);
+    max-width: 1860px;
+    
+}
+
+/* titulo y encabezado */
+/* subtitulo */
+h1{
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: -0.7%;
+}
+
+/* division */
+hr{
+    height: 5px;
+    background-color: black;
+    border: 0;
+}
+
+/* estilos a cada caja de plataformas */
+.plataformas{
+    max-width: 1450px;
+    min-height: 1000px;
+    background-color: #C3D0EF;
+    float: left;
+    text-align: center;
+}
+
+/* estilos a cada plataforma */
+article{
+    display: inline-block;
+    width: 20%;
+    margin-right: 15px;
+    margin-top: 50px;
+    border: #534D7D 2px solid; 
+    box-shadow: 5px 10px 18px #888888;
+}
+
+/* estilo a los logos */
+article > img{
+    border-radius: 15%;
+    margin-top: 10px;    
+}
+/* darle zoom al poner el mouse */
+article > img:hover{
+    scale: 1.08;
+}
+
+/* estilos a los h3 y parrafos */
+article > h3{
+   font-weight: 900;
+}
+.logo1{
+    color: red;
+    font-weight: 600;
+    background-color: whitesmoke;
+}
+.logo2{
+    color: purple;
+    font-weight: 600;
+    background-color: whitesmoke;
+}
+.logo3{
+    color: orange;
+    font-weight: 600;
+    background-color: whitesmoke;
+}
+.logo4{
+    color: purple;
+    font-weight: 600;
+    background-color: whitesmoke;
+}
+.logo5{
+    color:blue;
+    font-weight: 600;
+    background-color: whitesmoke;
+}
+.logo6{
+    color: red;
+    font-weight: 600;
+    background-color: whitesmoke;
+}
+.logo7{
+    color: green;
+    font-weight: 600;
+    background-color: whitesmoke;
+}
+.logo8{
+    color: orange;
+    font-weight: 600;
+    background-color: whitesmoke;
+}
+/* estilos a los botones de compra */
+.boton{
+    background-color: cornflowerblue;
+    padding: 10px 6px;
+    border-radius: 25px;
+    border: black 1px solid;
+}
+/* estilo al poner el mouse */
+.boton:hover{
+    background-color: darkred;
+}
+/* estilos a los descuentos */
+.descuento{
+    color: red;
+    font-weight: 600;
+}
+/* estilos a la promocion */
+main .promo{
+    max-width: 400px;
+    min-height: 1000px;
+    margin-left: 10px;
+    background-color: black;
+    float: left;
+    
+}
+/* estilo a la imagen de la promocion */
+.oferta > img{
+    height: 600px;
+    border-radius: 15px;
+}
+/* darle zoom al poner el mouse */
+.oferta > img:hover{
+    scale: 1.08;
+}
+/* lineas divisorias */
+aside > hr{
+    margin: 0;
+    background-color: gray;
+}
+.reseña{
+    text-align: center;
+    height: 300px;
+    background-color: #CCE7FF;
+}
+.reseña p{
+    font-weight: 600;
+}
+
+footer{
+    display: inline-block;    
+}
+footer p{
+    color: white;
+    
+   
+}
+footer a{
+    color: black;
+    font-weight: 900;
+}
+footer .autor{
+    text-align: center;
+}
+

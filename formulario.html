@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de reguistro</title>
+    <!-- linkeado al css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- cuadro para el formulario -->
+    <div class="cuadro">
+      <h1>CREAR CUENTA</h1>
+        <!-- formulario -->
+        <form method="post">
+            <div class="padrecajas">
+                <!-- cajas del form -->
+                <div class="cajas">
+                    <label>nombres y apellidos</label>
+                    <input type="text" required>
+                </div>
+                <div class="cajas">
+                    <label>nickname</label>
+                    <input type="text" required>
+                </div>
+                <div class="cajas">
+                    <label>correo electronico</label>
+                    <input type="email" required>
+                </div>
+                <div class="cajas">
+                    <label>fecha de nacimiento</label>
+                    <input type="date" required>
+                </div>
+                <div class="cajas">
+                    <label>numero de telefono</label>
+                    <input type="number" required>
+                </div>
+                <div class="cajas">
+                    <label>contraseña</label>
+                    <input type="password" required>
+                </div>
+            </div>
+            <!-- sub formulario -->
+            <h3>
+                Genero
+            </h3>
+            <!-- botones de eleccion -->
+            <div class="genero">
+                <input type="radio">
+                <label>masculino</label>
+                <input type="radio">
+                <label>femenino</label>
+                <input type="radio">
+                <label>no espeficar</label>
+            </div>
+            <!-- boton de enviar -->
+            <div class="button">
+                <a href="formpag2.html">REGISTRARME</a>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

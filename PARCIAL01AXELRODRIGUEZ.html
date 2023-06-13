@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>STREAMSPACE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    
+    <!-- en el encabezado ira el titulo y un contacto de referecia -->
+    <header>
+        <!-- titulo de la empresa -->
+        <div class="titulo">
+            <h1>STREAMSPACE</h1>
+            <h2>venta de plataformas de streming</h2>
+        </div>
+    </header>
+
+
+
+    <!-- linea que dividira el contenido con el titulo -->
+    <hr>
+    <!-- barra de navegacion de bootstrap -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">STREAMSPACE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html" target="_blank">registrate</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modaltext"
+                        type="button">carrito</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- lista de los productos y promociones -->
+    <main>
+        <!-- Modal -->
+        <div class="modal fade" id="modaltext" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">carrito de compras</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carrito">
+                            <img id="carritoVacio" class="img-fluid mx-auto d-block" src="carritovacio.png" alt="carvacio">
+                            <figcaption class="text-center">no cuenta con plataformas selecionadas</figcaption>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">cotizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- plataformas disponibles -->
+        <section class="plataformas">
+
+            <!-- articulo 1 netflix -->
+            <article>
+                <img class="imagen" src="netflix.jpg" alt="netflix" width="200" height="200">
+                <h3>NETFLIX</h3>
+                <p>membresias de <span class="logo1">NETFLIX</span></p>
+                <input type="checkbox" name="netflix"> 1 MES X 14.00 SOLES <br>
+                <input type="checkbox" name="netflix"> 3 MES X <span class="descuento">36.00 SOLES</span>
+                <p><button class="btn btn-primary">añadir al carrito</button></p>
+            </article>
+            <!-- articulo 2 hbomax -->
+            <article>
+                <img class="imagen" src="hbomax.png" alt="hbomax" width="200" height="200">
+                <h3>HBOMAX</h3>
+                <p>membresias de <span class="logo2">HBOMAX</span></p>
+                <input type="checkbox" name="hbomax"> 1 MES X 6.00 SOLES <br>
+                <input type="checkbox" name="hbomax"> 3 MES X <span class="descuento">16.00 SOLES</span>
+                <p><button class="btn btn-primary">añadir al carrito</button></p>
+            </article>
+            <!-- articulo 3 starplus -->
+            <article>
+                <img class="imagen" src="starplus.png" alt="starplus" width="200" height="200">
+                <h3>STARPLUS</h3>
+                <p>membresias de <span class="logo3">STARPLUS</span></p>
+                <input type="checkbox" name="starplus"> 1 MES X 9.00 SOLES <br>
+                <input type="checkbox" name="starplus"> 3 MES X <span class="descuento">24.00 SOLES</span>
+                <p><button class="btn btn-primary">añadir al carrito</button></p>
+            </article>
+            <!-- articulo 4 disneyplus -->
+            <article>
+                <img class="imagen" src="disney.jpg" alt="disneyplus" width="200" height="200">
+                <h3>DISNEYPLUS</h3>
+                <p>membresias de <span class="logo4">DISNEYPLUS</span></p>
+                <input type="checkbox" name="disneyplus"> 1 MES X 7.00 SOLES <br>
+                <input type="checkbox" name="disneyplus"> 3 MES X <span class="descuento">19.00 SOLES</span>
+                <p><button class="btn btn-primary">añadir al carrito</button></p>
+            </article>
+            <!-- articulo 5 amazonprime -->
+            <article>
+                <img class="imagen" src="amazonprime.png" alt="amazonprime" width="200" height="200">
+                <h3>AMAZONPRIME</h3>
+                <p>membresias de <span class="logo5">AMAZONPRIME</span></p>
+                <input type="checkbox" name="amazonprime"> 1 MES X 6.00 SOLES <br>
+                <input type="checkbox" name="amazonprime"> 3 MES X <span class="descuento">16.00 SOLES</span>
+                <p><button class="btn btn-primary">añadir al carrito</button></p>
+            </article>
+            <!-- articulo 6 youtube premium -->
+            <article>
+                <img class="imagen" src="youtube.png" alt="youtube premium" width="200" height="200">
+                <h3>YOUTUBE PREMIUM</h3>
+                <p>membresias de <span class="logo6">YT PREMIUM</span></p>
+                <input type="checkbox" name="youtube"> 1 MES X 10.00 SOLES <br>
+                <input type="checkbox" name="youtube"> 3 MES X <span class="descuento">24.00 SOLES</span>
+                <p><button class="btn btn-primary">añadir al carrito</button></p>
+            </article>
+            <!-- articulo 7 iptv -->
+            <article>
+                <img class="imagen" src="iptv.jpg" alt="iptv" width="200" height="200">
+                <h3>IPTV</h3>
+                <p>membresias de <span class="logo7">IPTV</span></p>
+                <input type="checkbox" name="iptv"> 1 MES X 5.00 SOLES <br>
+                <input type="checkbox" name="iptv"> 3 MES X <span class="descuento">12.00 SOLES</span>
+                <p><button class="btn btn-primary">añadir al carrito</button></p>
+            </article>
+            <!-- articulo 8 directvgo -->
+            <article>
+                <img class="imagen" src="directv.png" alt="directv" width="200" height="200">
+                <h3>DIRECTVGO</h3>
+                <p>membresias de <span class="logo8">DIRECTVGO</span></p>
+                <input type="checkbox" name="directv"> 1 MES X 15.00 SOLES <br>
+                <input type="checkbox" name="directv"> 3 MES X <span class="descuento">30.00 SOLES</span>
+                <p><button class="btn btn-primary">añadir al carrito</button></p>
+            </article>
+        </section>
+
+        <!-- promocion -->
+        <section class="promo">
+            <aside>
+                <!-- crearemos una promocion en combos -->
+                <div class="oferta">
+                    <img src="vengadores.jpg" alt="endgame">
+                </div>
+                <hr>
+                <!-- info de la oferta -->
+                <div class="reseña">
+                    <p>CONTRATANDO EL COMBO+ PODRAS LLEVARTE DISNEYPLUS Y STARPLUS JUNTOS A 3 MESES X 55 SOLES </p> <br>
+                    <p>Esta promoción solo es valida hasta el 15/06/23 y valido para usurios nuevos</p>
+                    <br>
+                    <!-- boton para adquirir la promocion -->
+                    <input type="button" value="adquirir COMBO+">
+                </div>
+            </aside>
+        </section>
+
+    </main>
+    <!-- info - terminos y condiciones  -->
+    <footer>
+        <p> Esta empresa peruana se dedica a la venta de cuentas de plataformas de streaming de pago mensual, si tiene
+            algun tipo de duda o reclamo antes de la compra revise los <a href="#">terminos y condiciones</a> de esta
+            pagina.</p> <br>
+        <p class="autor">Esta empresa es creada por Axel Rodriguez</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+       
+        <script src="porfa.js"></script>
+
+</body>
+
+</html>
